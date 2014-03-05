@@ -1,0 +1,112 @@
+\chapter{September - 2012} % Chapter title
+\label{ch:sep:2012} % For referencing the chapter elsewhere, use \autoref{ch:introduction} 
+
+%----------------------------------------------------------------------------------------
+
+\section{SublimeText 2, Crack}
+Although I want to pay the software 'SublimeText', the price is too expensive for me.
+I have to search the crack over the Internet, the crack solution is:
+\begin{enumerate}
+\item  Use the vim to open the programe file as binary format;
+\item  Find the string "3542 4535 3039 4333 3342 3032 3031 3131";
+\item  Change '3342' to '3242';
+\item  Then, using the following license to register.
+\end{enumerate}
+\begin{comment}
+\end{comment}
+\begin{verbatim}
+-----BEGIN LICENSE-----
+Zhiwei
+Unlimited User License
+EA7E-27304
+295F06AD49A222300142F52385B79017
+0EBC472E766824A3E764A77BEE8905AB
+532EA109E190C3E75483FF14D0010DFA
+5F532494C59E830CCE5002A0BE9110EC
+0B2AC29AB5BEAAA3242124FD2B99A2CE
+F443912E3A653CDE9195B7C15D5ED807
+F7C3904D5473C89529796E723C79C019
+3809B28DBBF4E34CAC38938A8389B925
+-----END LICENSE-----
+\end{verbatim}
+\hfill {\tiny edited on 2012-09-23}
+
+\section{Vim, Edit, Binary File}
+Vim can edit a binary file easier than the editor "Emacs". 
+You need the tool 'xxd' to dump a file from binary format to text format.
+After editing, you use 'xxd' to revert the file format into binary. 
+For example,
+
+\begin{verbatim}
+vi -b bin_file_name
+:%!xxd
+....
+editing something
+....
+:%!xxd -r
+:wq
+\end{verbatim}
+\hfill {\tiny edited on 2012-09-23}
+
+\section{Vim Crash, Input Method, Chinese Character Directory Name}
+The VIM, SublimeText2 and Notepad++ crashed after I installed a new WB98 word bank for JiDianWB.
+I wondered why and how the installation made this happen. 
+Finally, I found the reason.
+The reason is that the directory name of the new word bank is spelled as Chinese characters.
+Since my computer OS is the Windows 7 English version, the input method manager seems not to handle the Chinese Directory Name well.
+The solution is very simple, changing the directory name from Chinese characters to English letters.
+\hfill {\tiny  edited on 2012-09-17}
+
+\section{Python, Urlopen}
+Today, the Website of dictionary, "iCiba", blocked my access through Python scripts after my looking up several words. 
+After several trials, I found the solution: If using the standard usage for HTTP protocols, the problem can be solved.
+The codes in the following:
+
+\par From 
+\begin{verbatim}
+    try:
+        page = urllib2.urlopen(g_collins_url+word)
+    except urllib2.HTTPError, e:
+        print g_collins_url, e.code
+        return False
+    soup = BeautifulSoup(page)
+
+\end{verbatim}
+
+\par To
+\begin{verbatim}
+    try:
+        req = urllib2.Request(g_collins_url+word)
+        response = urllib2.urlopen(req)
+    except urllib2.HTTPError, e:
+        print g_collins_url, e.code
+        return False
+
+    page = response.read()
+    soup = BeautifulSoup(page)
+\end{verbatim}
+\hfill {\tiny  edited on 2012-09-19.}
+%
+\section{Combine Picture for Longman Words}
+Since the LongmanCN dictionary splits one word picture into several frames,
+I have to make a small program script to combine them, like this:
+\begin{verbatim}
+  if match:
+        fp = open(str(word_dir+file),'rb')
+#       print file;
+        old_image = Image.open(fp)
+        y = old_image.size[1];
+        new_image.paste(old_image, (x_index, y_index));
+        fp.close();
+
+        x_index = 0;
+        y_index = y_index + y;
+        os.remove(word_dir+file)
+\end{verbatim}
+It is noted that the picture file should be closed if you remove or delete it. 
+Since the IMage library does not support the method 'close',
+you have to take an alternative way to handle this.
+\hfill {\tiny  edited on 2012-09-19.}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
