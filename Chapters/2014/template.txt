@@ -1,0 +1,19 @@
+\chapter[March - 2014]{March - 2014} % Chapter title
+
+\label{ch:mar:2014} % For referencing the chapter elsewhere, use \autoref{ch:introduction} 
+
+%----------------------------------------------------------------------------------------
+\section{Remove comments from files in C}
+You use the tool {\it gcc} to remove the comments in files.
+\begin{verbatim}
+gcc -fpreprocessed -dD -E test.c
+\end{verbatim}
+
+\hfill {\tiny edited on2014-03-05.}
+
+\section{Big data  are we making a big mistake}
+\marginpar {\tiny edited on 2014-04-02.}
+Big data: are we making a big mistake?
+By Tim Harford
+
+\url{http://www.ft.com/cms/s/2/21a6e7d8-b479-11e3-a09a-00144feabdc0.html#axzz2xS1VXiUc}

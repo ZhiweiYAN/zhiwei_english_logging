@@ -4,8 +4,18 @@
 \label{ch:apr:2014} % For referencing the chapter elsewhere, use \autoref{ch:introduction} 
 
 %----------------------------------------------------------------------------------------
-\section{Big data  are we making a big mistake}
+\section{What if you didn't need money or attetion?}
+\marginpar {\tiny edited on 2014-04-01.}
 
+We do so many things for the money. 
+It's so deeply built into our culture that it takes a real effort to 
+realized it's the reason behind so many of our actions.
+
+If you stop doing all these things you're just doing for the money, 
+or the attention, what's left?
+
+\section{Big data  are we making a big mistake}
+\marginpar {\tiny edited on 2014-04-02.}
 Big data: are we making a big mistake?
 By Tim Harford
 
@@ -62,7 +72,233 @@ Many contrary results are languishing in desk drawers because they just didn't s
 {\bf{"Big data"}} has arrived but big insights have not. The challenge now is to solve new problems and gain new answers -- without making the same old statistical mistakes on a grander scale than ever.
 As for the idea that "with enough data" the numbers speak for themselves" -- that seems hopelessly naive in data sets where spurious patterns vastly outnumber genuine discoveries.
 
+\section{New RFS -- Breakthrough Technologies}
+\marginpar{\tiny edited on 2014-04-02.}
 
-\hfill {\tiny edited on 2014-04-02.}
+{\bf Great companies:}
+\begin{enumerate}
+\item be with a series of small wins that compound over time
+\item focus on solving real problems for real customers, and not just developing technology for its own sake.
+\item not to bite off an initial project that is far too big and expensive.
+\end{enumerate}
+
+{\bf Breathrough Technologies}
+\begin{enumerate}
+\item Energy: Cheap energy, energy storage and transmission.
+\item AI: 
+\item Robotics: We count a self-driving car as robot.
+\item Biotech:
+\item Healthecare: preventative healthcare.
+\item Education: Using the Internet to distribute traditional content to a wider audience. One-on-one in -person interaction.
+\item Internet Infrastructure: The Internet is a transformative power. We hope use the Internet to fix government. An important trend is the API-ification of everything. As more and more businesses are accessible with a web API, the Internet becomes more and more powerful.
+\item Science: new business models for basic research.
+\item Transportation and housing. About half of all energy is used on transportation, and people spend a huge amount of time unhappily commuting.
+\end{enumerate}
+
+\section{Bored People Quit}
+\marginpar {\tiny edited on 2014-04-22.}
+Bored People Quit
+By  
+\par \url{http://randsinrepose.com/archives/bored-people-quit/}
+
+{\bf Situation}
+These are the people who show up when your single best engineer casually
+and unexpectedly announces, ''I'm quitting. I'm join my good friend to found a start-up.
+This is my two weeks' notice''.
+
+{\bf Detcting Boredom}
+\begin{enumerate}
+\item A decrease in productivity is a great ealy sign.
+\item You ask, "Are you bored?"
+\item They tell you. And you listen.
+\end{enumerate}
+
+In reality, the boredom was a seed.
+You always need to be able to answer two questions regarding each person on your team:
+\begin{enumerate}
+\item Where are they going?
+\item What are you currently doing to get them there?
+\end{enumerate}
+
+There's no shit work when the work is all yours,
+there's just work you like to do and work you have to do.
+Occasinal stints on the latter are a good perspective reset for everyone on the team,
+but being left too long on "have to" work is a guarantee of evental boredom.
+
+Random meetings, phone calls, interviews disturb your team members.
+Your attention is only half the solution. 
+The other half is regularly keeping folks in the loop regarding your thoughts.
+
+My gig is the care and feeding of engineers, 
+and their productivity is my productivity.
+If they all leave, I have exactly no job.
+Your job is to help your team succeed.
+
+\section{Don't Fuck Up the Culture}
+\marginpar {\tiny edited on 2014-04-22.}
+Title: Don't Fuck Up the Culture \newline
+Author: Brian \newline
+URL: \url{https://medium.com/p/597cde9ee9d4} \newline
+
+{\bf Culture}
+I thought to myself, how many company CEOs
+are focused on culture above all else or their culture?
+
+Culture is simply a shared way of doing something with passion.
+
+Our culture is the foundation for our company. 
+The thing that will endure for 100 years, 
+the way it has for most 100 year companies, 
+is the culture.
+
+The culture is what creates the foundation for all future innovation. 
+If you break the culture,
+you break the machine that creates your products.
+
+When the culture is strong,
+you can trust everyone to do the right thing.
+People can be independent and autonomous.
+The stronger the culture,
+the less corporate process a company needs.
+In organizations (or even in a society) where culture is weak,
+you need an abundance of heavy, precise rules and processes.
+
+You make decisions by comparing to culture with your other targets.
+If compared to culture,
+they are relatively short-term.
+These problems will come and go.
+But culture is forever.
+
+\section{Game servers: UDP vs TCP}
+Title: Game servers: UDP vs TCP, \url{http://1024monkeys.wordpress.com/2014/04/01/game-servers-udp-vs-tcp/}
+\newline
+Author: Christoffer Lerno \newline
+
+The most damning property of TCP is the congestion control.
+You use reliable UDP instead of TCP - to get rid of its congestion contol.
+
+\begin{enumerate}
+    \item Use HTTP/HTTPS: if you are making occasional, client-initiated stateless queries and an occasinal delay is OK.
+    \item Use persistent TCP sockets: if both client and server may independently send packets but an occasional delay is OK.
+    \item Use UDP: if both client and server may independently send packets and occasional lag is not OK.
+\end{enumerate}
+
+These are mixable too. Your MMO might first use HTTP to get the latest updates, then connect to the game servers using UDP.
+
+Never be afraid of using the best tool for a task.
+
+Starting an action before confirmation is a typical latency/lag hiding technique.
+
+
+\section{How to become a greater developer?}
+\marginpar {\tiny edited on 2014-04-23.}
+Title: How to become a greater developer,  \url{http://peternixey.com/post/83510597580/how-to-be-a-great-software-developer}\newline
+Author: Peter Nixey \newline
+
+
+Your seniority and value as a programmer is measured not in what you know,
+it's measured in what you put out.
+The two are realted but definitely not the same.
+Your value is in how you move your project forward and 
+how you empower your team to do the same.
+
+You should aim for simplicity.
+Simplicity is far more easily attained by time spent working and refactoring than hours of pure thought and 'brilliance'.
+
+Simplicity and excellence are most reliably attained by starting with something, 
+anything that gets the job done and reworking back from that point.
+
+Companies are built on people and teams who day in, day out, 
+commit good code that enables others do the same.
+Great product is built by work horses, not dressage hourses.
+
+Not only is their output erratic but their superiority is aspiratinal and infectious.
+Their arrogance bleeds toxically into the rest of the team.
+Your projects depend on reliable people who work in reliable work.
+Greate developers are not people who can produce bubble sorts or link shorteners on demand.
+They are the people who when harness them up to a project,
+never stop moving forward and inspire everyone aroubnd them to do the same.
+You do not need {\it RockStars}.
+
+{\bf Name your functions and variables well} \newline
+It is one of the MOST IMPORTANT skills in programming.
+Function naming is the manifestation of problem definition 
+which is frankly the hardest part of programming.
+
+Names are the boundary conditions on your code. 
+Names are what you should be solving for.
+If you name correctly and then solve for that boundary conditions 
+that the names creates you will almost inevitably be left with highly function code.
+
+Function names create contracts between functions and the code that calls them.
+Good naming defines good architeture.
+Good function and variable naming makes code more readable and tightens the thousands of contracts which criss-cross your codebase.
+Sloppy naming means sloppy contracts, bugs, and even sloppier contracts built on top of them.
+
+Notice how much stronger this approach is than using comments.
+If you change the logic there is immediate pressure on you to change the variable names.
+Not so with comments.
+
+{\bf Go deep before you go wide - learn your chosen stack inside out} 
+\par 
+The marjority of the things you are trying to do have already been solved by the very stack you are already using.
+Most programmers waste huge amounts of time by lazily re-creating implementations of pre-exsiting functionality.
+You should undestand those existed technologies well that you use everyday.
+
+
+{\bf Learn from those good codes}
+\par
+The grand chessmasters spend proportionally much more time studying previous other good chess player's games than the average players.
+You should develop an aesthetic appreciation for code.
+Simplicity is beatuiful and simplicity is what we want.
+
+The truth is that the truth is sometimes ugly but you should always strive for beauty.
+
+Your code has two functions: the first is its immediate job.
+The second is to get out of the way of everyone who comes after you
+and it should therefore always be optimised for readability and resilience.
+
+{\bf Weight features on their lifetime cost, not their implementation cost}
+\par
+Features and architecture choices have maintenance costs that affect everything you ever build on top of them.
+Abstractions leak and the deeper you bury badly insulated abstractions the more things will get stained or poisoned when they leak through.
+Experimental architecture and shinny features should be embarked on every carefully and only for very good reasons.
+
+Build the features you need before the features you want and be VERY careful about architecture.
+
+{\bf Leverage of Technical Debt}
+\par 
+Einstein once said that " there is no force so powerful in the universe as compound interst'.  
+If you do not absolutely need them; 
+do not write them.
+You are in an exploratory phase. 
+You will pivot both on product and on technical implementation.
+Your initial code is scouting code.
+It should move you forward fast, illuminate the problem and the solution and give you just enough space to build camp.
+
+Check and re-check your code.
+You should make sure your code works. 
+It's not the testers' job and it's not your team-mates'job.
+It's your job.
+Lazily written code slows you down, increases cycle times, releases bugs and pisses everyone off.
+
+Do actual work for at least (only) four hours every day, and you will be one of the best contributing members of your team.
+Proper work is work that includes no email, no hacker news, no meeting, no dicking around. It means staying focussed at least 45 minutes at a time.
+
+{\bf Write up the things you've done and share them with the team}
+\par
+For example, have a tough time getting a fresh install of Postgres or ImageMagik to work? If you found it hard, the rest of your team will probably also find it hard so take a moment to throw down a few paragraphs telling them what you did and saving them the time next time.
+
+Think of testing like armour. 
+The more of it you wear the harder it is to hurt you but the harder it is to fight too.
+
+{\bf Make your team better}
+\par
+Does your presense make your team better or worse? 
+Does the quality of your code, your documentation and your technical skills help and improve those around you?
+Do you encourage and inspire your team-mates to become better developers?
+
+{\bf Who are you?} \par
+It's not who you are underneath, it's what you do that defines you.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
